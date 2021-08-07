@@ -68,6 +68,45 @@ $ nest g --
 $ nest g module moduleNameHere
 ```
 
+## Controllers
+
+```bash
+# create controller
+$ nest g controller controllerNameHere
+
+# create controller without specs
+$ nest g controller controllerNameHere --no-spec
+```
+## Services
+
+```bash
+# create provider
+$ nest g service controllerNameHere
+
+# create provider without specs
+$ nest g service controllerNameHere --no-spec
+```
+
+## uuid
+
+```bash
+# add uuid package
+$ yarn add uuid
+```
+
+## Validation and Error Handling
+
+```bash
+# add validators
+$ yarn add class-validator class-transformer
+```
+
+## TypeORM
+```bash
+# add typeorm / typeorm utils for nestjs / postgres
+$ yarn add typeorm @nestjs/typeorm pg
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
