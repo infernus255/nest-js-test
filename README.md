@@ -107,6 +107,30 @@ $ yarn add class-validator class-transformer
 $ yarn add typeorm @nestjs/typeorm pg
 ```
 
+## Authentication and Authorization
+```bash
+# add auth module
+$ nest g module auth
+
+# add auth service
+$ nest g service auth --no-spec
+
+# add auth controller
+$ nest g controller auth --no-spec
+
+# add bcrypt for encryption
+$ yarn add bcrypt
+
+# add passport.js for jwt ( for test use https://jwt.io/ )
+$ yarn add @nestjs/jwt @nestjs/passport passport passport-jwt
+
+# add tools for passport-jwt
+$ yarn add @types/passport-jwt
+```
+
+## Endpoints
+From body parameters, use x-www-form-urlencoded
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
