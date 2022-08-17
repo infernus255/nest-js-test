@@ -131,6 +131,27 @@ $ yarn add @types/passport-jwt
 ## Endpoints
 From body parameters, use x-www-form-urlencoded
 
+## Enviroment variables for Windows
+NPM scripts are not supported on Windows by default.
+We need to install cross-env NPM package globally.
+
+```bash
+# install cross-env
+$ npm install -g cross-env
+
+# install cross-env yarn
+$ yarn global add cross-env
+
+# add env variables
+$ cross-env MY_VARIABLE=var yarn start:dev
+
+# add 2 or more env variables in one command
+$ cross-env MY_FIRST_VARIABLE=first MY_SECOND_VARIABLE=second yarn start:dev
+
+# add @nestjs/config package
+$ yarn add @nestjs/config
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
